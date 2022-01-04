@@ -66,15 +66,25 @@ public class Main {
 //        }
 
         //break keyword
-        for (int number : numbers){
-            if (number == 5){
-                break;
+//        for (int number : numbers){
+//            if (number == 5){
+//                break;
+//            }
+//            System.out.println(number);
+//        }
+
+
+        String [] names = {"ALi", "Aaron", "Dave", "Basel", "Nairobi"};
+
+        //continue keyword; if name starts with "A", then skip the next instruction and go to the start of the for loop
+
+        for (String name : names){
+            if (name.startsWith("A")){
+                continue;
             }
-            System.out.println(number);
+            System.out.println(name);
         }
 
-
-//        String [] names = {"ALi", "Maria", "Dave"};
 //        System.out.println(Arrays.toString(names));
 //        System.out.println(names.length);
 
