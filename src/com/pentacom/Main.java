@@ -65,13 +65,21 @@ public class Main {
 //            System.out.println(number);
 //        }
 
+        //break keyword
+        for (int number : numbers){
+            if (number == 5){
+                break;
+            }
+            System.out.println(number);
+        }
+
 
 //        String [] names = {"ALi", "Maria", "Dave"};
 //        System.out.println(Arrays.toString(names));
 //        System.out.println(names.length);
 
         //Advanced way to loop through an array
-        Arrays.stream(numbers).forEach(System.out::println);
-
+//        Arrays.stream(numbers).forEach(System.out::println);
+//
     }}
 
