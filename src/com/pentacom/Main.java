@@ -78,18 +78,26 @@ public class Main {
 
         //continue keyword; if name starts with "A", then skip the next instruction and go to the start of the for loop
 
-        for (String name : names){
-            if (name.startsWith("A")){
-                continue;
-            }
-            System.out.println(name);
-        }
+//        for (String name : names){
+//            if (name.startsWith("A")){
+//                continue;
+//            }
+//            System.out.println(name);
+//        }
 
 //        System.out.println(Arrays.toString(names));
 //        System.out.println(names.length);
 
         //Advanced way to loop through an array
 //        Arrays.stream(numbers).forEach(System.out::println);
+
+        //while loop, evaluates a boolean expression
+
+        int count = 0;
+        while (count <= 14) {
+            System.out.println("Count: " + count);
+            count++;
+        }
 //
     }}
 
