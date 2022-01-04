@@ -110,22 +110,30 @@ public class Main {
 
         //Scanner class --> take user input from the console
 
-        Scanner myScanner = new Scanner(System.in);
-        System.out.println("Enter your username: ");
-        String userName = myScanner.nextLine();
-        System.out.println("Hello " + userName);
-
-        System.out.println("How old are you? ");
-        int age = myScanner.nextInt();
-        int year = LocalDate.now().minusYears(age).getYear();
-        System.out.println("You were born in " + year);
-
-        if (age > 18){
-            System.out.println("You are an adult :)");
-        }
-        else{
-            System.out.println("You are not an adult");
-        }
+//        Scanner myScanner = new Scanner(System.in);
+//        System.out.println("Enter your username: ");
+//        String userName = myScanner.nextLine();
+//        System.out.println("Hello " + userName);
 //
+//        System.out.println("How old are you? ");
+//        int age = myScanner.nextInt();
+//        int year = LocalDate.now().minusYears(age).getYear();
+//        System.out.println("You were born in " + year);
+//
+//        if (age > 18){
+//            System.out.println("You are an adult :)");
+//        }
+//        else{
+//            System.out.println("You are not an adult");
+//        }
+//
+
+        //methods
+        ///built-in methods e.g. println() is a method
+        ///user predefined methods
+
+        String nome = "Giraff";
+        boolean testNome = nome.startsWith("G") && nome.endsWith("e");
+        System.out.println(testNome);
     }}
 
