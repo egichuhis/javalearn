@@ -41,13 +41,20 @@ public class Main {
 
         //Not specify length of array
         int [] numbers = {2, 0, 5, 8, 7};
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(numbers[3]);
+//        System.out.println(Arrays.toString(numbers));
+//        System.out.println(numbers[3]);
+
+        //Normal for loop
+        for (int i = 0; i < numbers.length; i++){
+            System.out.println(numbers[i]);
+        }
 
         //Enhanced for loop
-        for (int number : numbers){
-            System.out.println(number);
-        }
+//        for (int number : numbers){
+//            System.out.println(number);
+//        }
+
+
 
 //        String [] names = {"ALi", "Maria", "Dave"};
 //        System.out.println(Arrays.toString(names));
