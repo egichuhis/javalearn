@@ -137,27 +137,80 @@ public class Main {
 //        System.out.println(testNome);
 
         ///user pre-defined methods
-    char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D' };
+//    char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D' };
 
     //calling/invoking the method defined below
-    int count = countOccurrences(letters, 'D');
-        System.out.println(count);
-    }
+//    int count = countOccurrences(letters, 'D');
+//        System.out.println(count);
+//    }
 
     //"public" is an access-modifier which makes the method accessible by other classes
     //"static" means the method belongs to a class
     //"int" is the return type of this method
-    public static int countOccurrences(char [] letters, char searchLetter){
-        System.out.println(Arrays.toString(letters));
-        System.out.println(searchLetter);
-        int count = 0;
-        for (char letter : letters){
-            if (letter == searchLetter){
-                count++;
-            }
+//    public static int countOccurrences(char [] letters, char searchLetter){
+//        System.out.println(Arrays.toString(letters));
+//        System.out.println(searchLetter);
+//        int count = 0;
+//        for (char letter : letters){
+//            if (letter == searchLetter){
+//                count++;
+//            }
+//        }
+//       return count;
+
+        Lens lensOne = new Lens("Sony",
+                                "85mm",
+                                true);
+
+        Lens lensTwo = new Lens("Nikon",
+                "65mm",
+                false);
+
+        Lens lensThree = new Lens("Canon",
+                "75mm",
+                true);
+
+        System.out.println("Lens 1");
+        System.out.println(lensOne.brand);
+        System.out.println(lensOne.focalLength);
+        System.out.println(lensOne.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 2");
+        System.out.println(lensTwo.brand);
+        System.out.println(lensTwo.focalLength);
+        System.out.println(lensTwo.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 3");
+        System.out.println(lensThree.brand);
+        System.out.println(lensThree.focalLength);
+        System.out.println(lensThree.isPrime);
+        System.out.println();
+
+
+
+ }
+//Classes and Objects
+///a class is a blueprint for creating objects, like a template, the objects can have different attributes
+    static class Lens {
+        String brand;
+        String focalLength;
+        boolean isPrime;
+
+        Lens(String brand,
+             String focalLength,
+             boolean isPrime){
+
+            //'this' refers to the current instance of the current class
+            this.brand = brand;
+            this.focalLength = focalLength;
+            this.isPrime = isPrime;
         }
-       return count;
-    }
+}
+
+
+
 
 }
 
