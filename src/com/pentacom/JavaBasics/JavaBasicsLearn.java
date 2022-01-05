@@ -8,21 +8,7 @@ public class JavaBasicsLearn {
 
 
 
-        //while loop, evaluates a boolean expression
 
-//        int count = 0;
-//        while (count <= 14) {
-//            System.out.println("Count: " + count);
-//            count++;
-//        }
-
-        //do while loop; execute at least once the code in the "do" no matter if condition in while is true or false
-//        int count = 54;
-//        do {
-//            System.out.println("Count: " + count);
-//            count++;
-//        }
-//        while (count <= 20);
 
         //Scanner class --> take user input from the console
 
