@@ -198,6 +198,11 @@ public class Main {
         String focalLength;
         boolean isPrime;
 
+        //In Java, a constructor is a block of code similar to the method. It is called when an instance of the
+    //class is created. At the time of calling constructor, memory for the object is allocated in the memory
+    //It is a special type of method used to initialize the object.
+    //Every time an object is created using the new() keyword, at least one constructor is called
+    //constructor name must be the same as its class name
         Lens(String brand,
              String focalLength,
              boolean isPrime){
@@ -208,9 +213,6 @@ public class Main {
             this.isPrime = isPrime;
         }
 }
-
-
-
 
 }
 
