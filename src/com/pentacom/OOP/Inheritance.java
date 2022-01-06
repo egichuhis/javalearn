@@ -29,6 +29,17 @@ class Product {
         this.price = price;
     }
 
+    //an indirect way to set the product "id" of a private attribute, using a method
+    ///Setters, special method to set the attribute , when marked private
+    void setPid(int pid){
+        this.pid = pid; //"this" (LHS) means reference to current object & RHS belongs to method
+    }
+
+    ///Getters special method to get the attribute , when marked private
+    int getPid(){
+        return pid;
+    }
+
     //To read data from Product Object
     void showProductDetails(){
         System.out.println("--Product ID:\t" + pid+"---------");
@@ -55,9 +66,10 @@ public class Inheritance {
         product.showProductDetails();
 
         Product product1 = new Product();
-        product1.pid = 200;
+        product1.setPid(201); //error since attribute "id" is set to private & cannot be accessed
         product1.price = 140000;
         product1.name = "MacBook M1";
         product1.showProductDetails();
+        product1.getPid();
     }
 }
