@@ -23,7 +23,7 @@ class Product {
 
     //To read data from Product Object
     void showProductDetails(){
-        System.out.println("Product ID:\t" + pid);
+        System.out.println("--Product ID:\t" + pid+"---------");
         System.out.println("Product Name:\t" + name);
         System.out.println("Product Price:\t" + price);
         System.out.println("------------------------------------------------------");
@@ -45,5 +45,11 @@ public class Inheritance {
         product.setProductDetails(12, "iPhoneX", 80000);
         //show product details
         product.showProductDetails();
+
+        Product product1 = new Product();
+        product1.pid = 200;
+        product1.price = 140000;
+        product1.name = "MacBook M1";
+        product1.showProductDetails();
     }
 }
