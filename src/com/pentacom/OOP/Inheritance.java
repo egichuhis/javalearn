@@ -34,6 +34,7 @@ class Product {
 
 public class Inheritance {
     public static void main(String[] args) {
-
+        //create an object : Product
+        Product product = new Product();
     }
 }
