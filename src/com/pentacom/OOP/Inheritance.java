@@ -12,7 +12,7 @@ class Product {
 
     //Changed to-->
 
-    private int pid; //the id cannot be written directly but through a method
+    int pid; //the id cannot be written directly but through a method
     String name;
     int price;
 
@@ -50,10 +50,26 @@ class Product {
 }
 
 class Mobile extends Product{ //IS-A Relation, Mobile IS-A Product, Mobile is Child, Product is Parent
+    //Additional attributes of Mobile other than Product attributes
+    String os;
+    int ram;
+    int sdCardSize;
 
     Mobile() {
         System.out.println(">> Mobile Object Constructed");
     }
+
+    //we have redefined the same method from the parent into the child with different inputs
+    //we now have 2 methods, one from parent and from child
+    //both methods are different as in based on inputs (even though name is same
+    //Method overloading
+    void setProductDetails(int pid, String name, int price, String os, int ram, int sdCardSize){
+        this.pid = pid;
+        this.name = name;
+        this.price = price;
+        this.ram = ram;
+        this.os = os;
+        this.sdCardSize = sdCardSize;
 }
 
 
@@ -85,4 +101,4 @@ public class Inheritance {
         mobile.setProductDetails(124, "Samsung Galaxy", 5000);
         mobile.showProductDetails();
     }
-}
+}}
