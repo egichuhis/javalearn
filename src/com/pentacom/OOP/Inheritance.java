@@ -49,6 +49,13 @@ class Product {
     }
 }
 
+class Mobile extends Product{ //IS-A Relation, Mobile IS-A Product, Mobile is Child, Product is Parent
+
+    Mobile() {
+        System.out.println(">> Mobile Object Constructed");
+    }
+}
+
 
 
 public class Inheritance {
@@ -56,20 +63,26 @@ public class Inheritance {
         //create an object : Product
         //"product" is not an object, it's a reference variable which holds the hashcode of the object in hex notation
 
-        Product product = new Product();
+//        Product product = new Product();
 
        // System.out.printf("Product is: "+product);
 
         //writing data into object
-        product.setProductDetails(12, "iPhoneX", 80000);
+//        product.setProductDetails(12, "iPhoneX", 80000);
         //show product details
-        product.showProductDetails();
+//        product.showProductDetails();
 
-        Product product1 = new Product();
-        product1.setPid(201); //error since attribute "id" is set to private & cannot be accessed
-        product1.price = 140000;
-        product1.name = "MacBook M1";
-        product1.showProductDetails();
-        product1.getPid();
+//        Product product1 = new Product();
+//        product1.setPid(201); //error since attribute "id" is set to private & cannot be accessed
+//        product1.price = 140000;
+//        product1.name = "MacBook M1";
+//        product1.showProductDetails();
+//        product1.getPid();
+
+        //Requesting to get Mobile Object constructed
+        Mobile mobile = new Mobile();
+        ///Product object (Parent) gets constructed before the Mobile object (Child) --> Rule to Inheritance (Object to Object)
+        mobile.setProductDetails(124, "Samsung Galaxy", 5000);
+        mobile.showProductDetails();
     }
 }
