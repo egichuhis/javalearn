@@ -4,7 +4,15 @@ package com.pentacom.OOP;
 class Product {
 
     //Attributes (State)
-    int pid;
+    //If you don't want the data to be written into objects directly, you can make the attributes private
+
+//    int pid;
+//    String name;
+//    int price;
+
+    //Changed to-->
+
+    private int pid; //the id cannot be written directly but through a method
     String name;
     int price;
 
