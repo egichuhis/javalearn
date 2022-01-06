@@ -23,7 +23,7 @@ class Product {
 
     //To read data from Product Object
     void showProductDetails(){
-        System.out.println("Product ID" + pid);
+        System.out.println("Product ID:\t" + pid);
         System.out.println("Product Name:\t" + name);
         System.out.println("Product Price:\t" + price);
         System.out.println("------------------------------------------------------");
@@ -35,6 +35,15 @@ class Product {
 public class Inheritance {
     public static void main(String[] args) {
         //create an object : Product
+        //"product" is not an object, it's a reference variable which holds the hashcode of the object in hex notation
+
         Product product = new Product();
+
+       // System.out.printf("Product is: "+product);
+
+        //writing data into object
+        product.setProductDetails(12, "iPhoneX", 80000);
+        //show product details
+        product.showProductDetails();
     }
 }
