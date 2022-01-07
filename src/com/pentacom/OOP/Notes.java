@@ -98,6 +98,22 @@ It can provide from 0 to 100% abstraction
 -> Can have constructors and static methods
 -> Can have final methods
 
+Interface
+----------------------------------------------------------
+Is a better version of abstract class
+An interface in java is a blueprint of a class which contains static constants and abstract methods
+It enables multiple inheritance and helps in achieving loose coupling
+It provides 100% abstraction
+
+A class -> extends a class
+A class -> implements an interface
+An interface -> extends an interface
+
+
+
+
+
+
     */
 
 }
