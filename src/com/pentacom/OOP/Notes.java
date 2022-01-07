@@ -109,6 +109,13 @@ A class -> extends a class
 A class -> implements an interface
 An interface -> extends an interface
 
+Encapsulation
+----------------------------------------------------------
+Privatising the data; eg. marking an attribute as private, and hence cannot be accessed directly but through
+setters and getters; a concept known as data hiding,focussing on security
+
+Encapsulation is the mechanism of wrapping up of data and code acting on the methods together as a single unit
+It is achieved by declaring the variables of a class as private and the providing the public setter and getter methods and view the variable values
 
 
 
