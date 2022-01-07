@@ -80,9 +80,9 @@ class Mobile extends Product { //IS-A Relation, Mobile IS-A Product, Mobile is C
         System.out.println("--Product ID:\t" + pid + "---------");
         System.out.println("Product Name:\t" + name);
         System.out.println("Product Price:\t" + price);
+        System.out.println("Product ram:\t" + ram);
         System.out.println("Product os:\t" + os);
-        System.out.println("Product SDCardSize:\t" + sdCardSize);
-        System.out.println("Product RAM:\t" + ram);
+        System.out.println("Product RAM:\t" + sdCardSize);
         System.out.println("-------------------------------------------------------");
     }
 }
@@ -111,7 +111,7 @@ public class Inheritance {
         //Requesting to get Mobile Object constructed
         Mobile mobile = new Mobile();
         ///Product object (Parent) gets constructed before the Mobile object (Child) --> Rule to Inheritance (Object to Object)
-        mobile.setProductDetails(124, "Samsung Galaxy", 5000);
+        mobile.setProductDetails(124, "Samsung Galaxy", 5000, "iOS", 4, 500 );
         mobile.showProductDetails();
     }
 }

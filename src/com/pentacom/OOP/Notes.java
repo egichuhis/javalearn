@@ -46,6 +46,14 @@ public class Notes {
     -> Doesn't support overloading
 
 
+use extends keyword to inherit
+
+Advantages of inheritance
+-> Code Reusability
+-> Extensibility
+-> Overriding
+-> Data Hiding (private attributes)
+
 
 
     */
