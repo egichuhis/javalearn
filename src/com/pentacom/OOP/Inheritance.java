@@ -45,11 +45,11 @@ class Product {
         System.out.println("--Product ID:\t" + pid+"---------");
         System.out.println("Product Name:\t" + name);
         System.out.println("Product Price:\t" + price);
-        System.out.println("------------------------------------------------------");
+        System.out.println("-------------------------------------------------------");
     }
 }
 
-class Mobile extends Product{ //IS-A Relation, Mobile IS-A Product, Mobile is Child, Product is Parent
+class Mobile extends Product { //IS-A Relation, Mobile IS-A Product, Mobile is Child, Product is Parent
     //Additional attributes of Mobile other than Product attributes
     String os;
     int ram;
@@ -62,17 +62,30 @@ class Mobile extends Product{ //IS-A Relation, Mobile IS-A Product, Mobile is Ch
     //we have redefined the same method from the parent into the child with different inputs
     //we now have 2 methods, one from parent and from child
     //both methods are different as in based on inputs (even though name is same
-    //Method overloading
-    void setProductDetails(int pid, String name, int price, String os, int ram, int sdCardSize){
+    //METHOD OVERLOADING: same method, different inputs
+    void setProductDetails(int pid, String name, int price, String os, int ram, int sdCardSize) {
         this.pid = pid;
         this.name = name;
         this.price = price;
         this.ram = ram;
         this.os = os;
         this.sdCardSize = sdCardSize;
+    }
+
+    //Let's redefine showProductDetails as well
+    //2 methods, one from parent and one from child with same signatures.
+    //child methods will be executed and not the parent method -->
+    //METHOD OVERRIDING
+    void showProductDetails() {
+        System.out.println("--Product ID:\t" + pid + "---------");
+        System.out.println("Product Name:\t" + name);
+        System.out.println("Product Price:\t" + price);
+        System.out.println("Product os:\t" + os);
+        System.out.println("Product SDCardSize:\t" + sdCardSize);
+        System.out.println("Product RAM:\t" + ram);
+        System.out.println("-------------------------------------------------------");
+    }
 }
-
-
 
 public class Inheritance {
     public static void main(String[] args) {
@@ -101,4 +114,4 @@ public class Inheritance {
         mobile.setProductDetails(124, "Samsung Galaxy", 5000);
         mobile.showProductDetails();
     }
-}}
+}
