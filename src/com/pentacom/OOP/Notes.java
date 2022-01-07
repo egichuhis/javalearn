@@ -59,6 +59,7 @@ Java doesn't support multi-level inheritance, i.e grandparent->parent->child
 
 Polymorphism -> is the property of an object which allows it to take multiple forms
 Polymorphism types->Compile time & Run time
+
 Compile Time Polymorphism or Static Polymorphism is resolved during compile time
 Overloading is an example of compile time polymorphism
 
@@ -68,8 +69,18 @@ Rules for Overloading
 # It can have different return types if argument list is different
 # It can throw different exceptions
 # It can have different access modifiers
+----------------------
+Run Time Polymorphism or Dynamic Polymorphism is resolved during run time
+Method Overriding is an example of run time polymorphism
+An overridden method is called through the reference variable of a superclass
 
+Rules for Overriding
+---------------------
+# Overriding method argument list must match the overridden method
+# The return type must be the same or subtype of overridden method
+# Access level cannot be more restrictive than overridden method
 
+----------------------
     */
 
 }
