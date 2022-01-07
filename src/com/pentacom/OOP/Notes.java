@@ -54,6 +54,20 @@ Advantages of inheritance
 -> Overriding
 -> Data Hiding (private attributes)
 
+Java doesn't support multi-level inheritance, i.e grandparent->parent->child
+-----------------------------------------------------------------------------------
+
+Polymorphism -> is the property of an object which allows it to take multiple forms
+Polymorphism types->Compile time & Run time
+Compile Time Polymorphism or Static Polymorphism is resolved during compile time
+Overloading is an example of compile time polymorphism
+
+Rules for Overloading
+---------------------
+# Overloaded methods must have different argument list
+# It can have different return types if argument list is different
+# It can throw different exceptions
+# It can have different access modifiers
 
 
     */
