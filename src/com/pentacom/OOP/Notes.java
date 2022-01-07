@@ -81,6 +81,23 @@ Rules for Overriding
 # Access level cannot be more restrictive than overridden method
 
 ----------------------
+
+Abstraction
+----------------------------------------------------------
+Abstraction is the methodology of hiding the implementation details from the user and only providing the functionality to them
+
+Ways to achieve Abstraction; using
+-> Abstract classes
+-> Interfaces
+
+An abstract class is a template definition to methods and variables of a class that contains one or more abstracted methods;
+It can provide from 0 to 100% abstraction
+-> Must be declared with an abstract keyword
+-> Can have abstract and non-abstract methods
+-> Cannot be instantiated
+-> Can have constructors and static methods
+-> Can have final methods
+
     */
 
 }
